@@ -1,0 +1,37 @@
+/* src/sections/Health/Health.css */
+.health-section {
+  background-color: var(--white);
+}
+
+.health-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.health-card {
+  border: 2px solid var(--primary-green);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--dark-blue);
+}
+
+.health-icon {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.health-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--primary-green);
+}
+.health-card p {
+  color: var(--white);
+}
+.health-icon{
+  color: var(--primary-green);
+}

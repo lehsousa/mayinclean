@@ -1,0 +1,54 @@
+/* src/components/Footer/Footer.css */
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--light-bg);
+  padding-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-logo {
+    max-height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: var(--white);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--primary-green);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #1a4a70; /* Cor um pouco mais clara que o fundo */
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

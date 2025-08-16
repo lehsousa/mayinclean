@@ -1,0 +1,49 @@
+/* Fundo da seção alterado para o azul da empresa */
+.beneficies-section {
+  background-color: var(--dark-blue);
+}
+
+/* Ajusta a cor do título principal para ser legível no fundo azul */
+.beneficies-section .section-title {
+  color: var(--light-bg);
+}
+
+.beneficies-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Card agora com fundo branco para contrastar */
+.beneficies-card {
+  background-color: var(--white); /* Fundo branco */
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px var(--primary-green) solid;
+  text-align: center;
+  color: var(--dark-blue); /* Cor do texto padrão do card alterada para azul */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Ícone com a cor azul */
+.beneficies-icon {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+/* Título do card com a cor azul */
+.beneficies-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+
+/* Estilo para a imagem dentro do card */
+.beneficies-card img {
+  width: 100%;
+  margin-top: 20px; /* Adiciona espaço entre o texto e a imagem */
+  border-radius: 8px; /* Borda arredondada */
+  border: 3px solid var(--primary-green); /* Borda fina verde */
+}
