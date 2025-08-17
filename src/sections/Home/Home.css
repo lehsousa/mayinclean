@@ -1,11 +1,13 @@
 .home-section {
-  position: relative; /* Essencial para posicionar o vídeo e o overlay por trás */
+  position: relative;
+  /* Essencial para posicionar o vídeo e o overlay por trás */
   color: var(--white);
   min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 100px 20px;
-  overflow: hidden; /* Garante que o vídeo não ultrapasse os limites da seção */
+  overflow: hidden;
+  /* Garante que o vídeo não ultrapasse os limites da seção */
 }
 
 #video-bg {
@@ -17,7 +19,8 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 1; /* Camada mais baixa */
+  z-index: 1;
+  /* Camada mais baixa */
 }
 
 .video-overlay {
@@ -26,13 +29,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 47, 81, 0.6); /* Cor --dark-blue com 60% de opacidade */
-  z-index: 2; /* Fica entre o vídeo e o conteúdo */
+  background-color: rgba(0, 47, 81, 0.6);
+  /* Cor --dark-blue com 60% de opacidade */
+  z-index: 2;
+  /* Fica entre o vídeo e o conteúdo */
 }
 
 .home-content {
-  position: relative; /* Necessário para que o z-index funcione */
-  z-index: 3; /* Camada mais alta, acima do vídeo e do overlay */
+  position: relative;
+  /* Necessário para que o z-index funcione */
+  z-index: 3;
+  /* Camada mais alta, acima do vídeo e do overlay */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,9 +96,18 @@
 }
 
 @media (max-width: 992px) {
-  .home-text h1 {
-    font-size: 2.8rem;
+  .home-image{
+    margin-top: -150px;
   }
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  #video-bg {
+    top: 31%;
+    left: 50%;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -99,7 +115,13 @@
     min-height: auto;
     text-align: center;
   }
+
   .home-content {
     flex-direction: column-reverse;
+  }
+
+  #video-bg {
+    top: 28%;
+    left: 50%;
   }
 }

@@ -36,7 +36,7 @@ const servicesData = [
   },
   { 
     icon: <FaShieldAlt />, 
-    name: "Impermeabilização",
+    name: "Blindagem",
     description: "Proteja seus estofados contra líquidos e manchas.",
     backMedia: "/assets/impermeabilizacao.mp4" // Caminho para o seu vídeo
   }
@@ -106,7 +106,7 @@ const Services = () => {
                 <p className="text-gray-600 text-sm text-center">{servicesData[5].description}</p>
               </div>
               <div className="flip-card-back">
-                  <MediaComponent src={servicesData[4].backMedia} alt={servicesData[4].name} />
+                  <MediaComponent src={servicesData[5].backMedia} alt={servicesData[5].name} />
               </div>
             </div>
           </div>

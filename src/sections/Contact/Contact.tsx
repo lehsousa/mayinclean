@@ -8,7 +8,7 @@ const Contact = () => {
   const [service, setService] = useState('Limpeza de Sofá');
   
   // Substitua pelo número de WhatsApp da empresa com código do país
-  const companyWhatsAppNumber = '5511958131645'; 
+  const companyWhatsAppNumber = '5511949570997'; 
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

@@ -35,7 +35,7 @@ const Beneficies = () => {
             <h3>Mais Saúde para a Sua Família</h3>
             <p>
               Os estofados são um terreno fértil para ácaros, bactérias e fungos, agentes invisíveis que são dos principais causadores de alergias e doenças respiratórias como rinite e asma. A nossa limpeza profunda elimina estes microrganismos, purificando o ambiente e ajudando a prevenir e a amenizar os sintomas alérgicos, garantindo um lar mais saudável para si e para a sua família.
-            </p><br />
+            </p>
              <img src="/assets/beneficie3.jpeg" alt="" />
           </div>
         </div>
