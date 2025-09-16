@@ -1,14 +1,10 @@
 /* src/index.css */
 
+/* 1. A importação da fonte DEVE ser a primeira linha. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+/* 2. A diretiva do Tailwind para a versão mais recente é apenas esta. */
 @import "tailwindcss";
-
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --light-bg: #f3f3fb;
@@ -17,6 +13,7 @@
   --white: #ffffff;
   --font-body: 'Montserrat', sans-serif;
   --font-heading: 'Cooper BT', 'Georgia', serif;
+  --text-primary-green:var(--primary-green);
   /* Usando Georgia como alternativa */
 }
 

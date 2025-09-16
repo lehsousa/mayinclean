@@ -5,10 +5,11 @@ import Home from './sections/Home/Home';
 import About from './sections/About/About';
 import Services from './sections/Services/Services';
 import Health from './sections/Health/Health';
+import Testimonials from './sections/Testimonials/Testimonials'; 
 import Contact from './sections/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import './App.css';
 import Beneficies from './sections/Beneficies/Beneficies';
+import './App.css';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Services />
         <Health />
        <Beneficies />
+       <Testimonials />
         <Contact />
       </main>
       <Footer />

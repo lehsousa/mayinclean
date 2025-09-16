@@ -17,6 +17,7 @@ const Header = () => {
           <a href="#services" className="nav-link" onClick={() => setIsOpen(false)}>Serviços</a>
           <a href="#health" className="nav-link" onClick={() => setIsOpen(false)}>Saúde</a>
            <a href="#beneficies" className="nav-link" onClick={() => setIsOpen(false)}>Benefícios</a>
+            <a href="#testimonials" className="nav-link" onClick={() => setIsOpen(false)}>Depoimentos</a>
           <a href="#contact" className="nav-link cta-button" onClick={() => setIsOpen(false)}>Orçamento</a>
         </div>
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>

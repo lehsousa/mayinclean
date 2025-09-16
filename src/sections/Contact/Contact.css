@@ -1,41 +1,28 @@
 /* src/sections/Contact/Contact.css */
 .contact-section {
   background-color: var(--light-bg);
+  text-align: center; /* Centraliza o título e o subtítulo */
 }
 
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: var(--white);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+/* Um subtítulo opcional para dar mais contexto ao usuário */
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: -15px;
+  margin-bottom: 40px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 8px;
-  color: var(--dark-blue);
-}
-
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-family: var(--font-body);
-  font-size: 1rem;
+/* Novo container para o botão */
+.cta-container {
+  /* Mantém o botão centralizado */
+  display: flex;
+  justify-content: center;
 }
 
 .submit-button {
-  width: 100%;
-  padding: 15px;
+  /* Ajustado para não ocupar 100% da largura */
+  width: auto;
+  padding: 15px 40px; /* Mais preenchimento lateral para um visual melhor */
   border: none;
   background-color: var(--primary-green);
   color: var(--dark-blue);
@@ -44,6 +31,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-transform: uppercase; /* Deixa o texto mais destacado */
 }
 
 .submit-button:hover {

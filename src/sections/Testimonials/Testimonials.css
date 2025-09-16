@@ -1,0 +1,122 @@
+/* Estilo geral da secção */
+.testimonials-section {
+  background-color: var(--font-body);
+  padding: 4rem 1rem;
+}
+
+/* Título da secção */
+.testimonials-section .section-title-wrapper {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.testimonials-section .section-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--dark-blue);
+}
+.testimonials-section .highlight {
+  color: var(--primary-green);
+}
+
+/* Grelha de depoimentos */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+/* Card de depoimento individual */
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--primary-green);
+}
+
+/* Cabeçalho do card (ícone e nome) */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Ícone de utilizador (círculo com a inicial) */
+.user-icon {
+  flex-shrink: 0;
+  width: 3rem; /* w-12 */
+  height: 3rem; /* h-12 */
+  border-radius: 9999px; /* rounded-full */
+  background-color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-icon span {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.25rem; /* text-xl */
+}
+
+.user-info {
+  margin-left: 1rem; /* ml-4 */
+}
+.user-info h4 {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--dark-blue);
+}
+
+/* Estilo das estrelas */
+.star-rating {
+  display: flex;
+  gap: 0.25rem; /* space-x-1 */
+}
+.star-filled {
+  color: #FBBF24; /* text-yellow-400 */
+}
+.star-empty {
+  color: #D1D5DB; /* text-gray-300 */
+}
+
+/* Comentário */
+.comment {
+  font-family: var(--font-body);
+  color: #4B5563; /* text-gray-600 */
+  flex-grow: 1; /* Para empurrar o rodapé para baixo */
+}
+
+/* Rodapé do card */
+.card-footer {
+  margin-top: 1.5rem; /* mt-6 */
+  padding-top: 1rem; /* pt-4 */
+  border-top: 1px solid #E5E7EB; /* border-t border-gray-200 */
+  display: flex;
+  align-items: center;
+  color: #6B7281; /* text-gray-500 */
+  font-size: 0.875rem; /* text-sm */
+  font-family: var(--font-body);
+}
+.card-footer svg {
+  margin-right: 0.5rem; /* mr-2 */
+}
+
+/* Media queries para responsividade */
+@media (min-width: 768px) { /* md: */
+  .testimonials-section .section-title {
+    font-size: 2.25rem; /* text-4xl */
+  }
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) { /* lg: */
+  .testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
