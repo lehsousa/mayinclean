@@ -11,7 +11,9 @@ const Footer = () => {
 
         {/* Coluna 1: Logo e Slogan */}
         <div className="footer-info">
+          <a href='#home'>
           <img src="/assets/logoazul.jpg" alt="Mayin Clean" className="footer-logo" />
+          </a>
           <p>Higienização de Estofados | Impermeabilização</p>
         </div>
 
@@ -33,7 +35,7 @@ const Footer = () => {
             <a href="https://instagram.com/mayincleanoficial" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             <a href="https://facebook.com/profile.php?id=61569882236356" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
             {/* 2. ADICIONE O LINK E O ÍCONE DO TIKTOK AQUI */}
-            <a href="https://tiktok.com/@seu-usuario" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+            <a href="https://tiktok.com/@mayincleanoficial" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
           </div>
         </div>
 

@@ -11,7 +11,13 @@ import Footer from './components/Footer/Footer';
 import Beneficies from './sections/Beneficies/Beneficies';
 import './App.css';
 
+// 1. Importando o botão flutuante
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
+
 function App() {
+  // Número de telefone para o botão
+  const phoneNumber = '5511990096260';
+
   return (
     <div className="App">
       <Header />
@@ -25,6 +31,9 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      
+      {/* 2. Adicionando o botão flutuante ao site */}
+      <WhatsAppButton phoneNumber={phoneNumber} />
     </div>
   );
 }
